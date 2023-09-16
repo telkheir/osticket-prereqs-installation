@@ -1,5 +1,5 @@
 <p align = "center">
-<img src = "https://github.com/banksii/osticket-prereqs-installation/assets/120074266/327f11c7-a9bb-451e-9302-e837f0befd3f">
+<img src = "https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/dbdca06e-9334-4ed6-9777-59acc6ee63f3">
 </p>
 
 <h1> osTicket: Prerequisites and Installation </h1>
@@ -35,11 +35,11 @@ This tutorial will walk through the prerequisites and installation of osTicket u
 <blockquote>
   osTicket requires a web server to host it. This tutorial is going to use IIS to do so.</blockquote> 
   <br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, open Control Panel, navigate to Programs, and click on “Turn Windows Features on or off.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First navigate to Programs in the control panel, and under Programs and Features click on “Turn Windows Features on or off.
 <br>
 <br>
 
-<img alt = "a screenshot of programs section in control panel" src="https://github.com/banksii/osticket-prereqs-installation/assets/120074266/0bb095ac-d03e-470e-ac30-fc13b42e5ef](https://github.com/banksii/osticket-prereqs-installation/assets/120074266/943d7060-0f9b-4e76-9292-962e9026b45c">
+<img width="960" alt="Capture" src="https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/1cb40865-2d94-437e-a5a3-30194154b1f0">
 
 <br>
 <br>
@@ -49,7 +49,7 @@ Back in the World Wide Web Services folder, open the Common HTTP Features subfol
 
 <br>
 
-<img width="960" alt="Capture1" src="https://github.com/banksii/osticket-prereqs-installation/assets/120074266/20fa15ac-a3b8-4b3c-80a6-dbf14edda3f4">
+<img width="960" alt="Capture1" src="https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/5d7a3627-d101-4d3b-8317-a54c7e5d0c5b">
 
 <br>
 <br>
@@ -59,7 +59,8 @@ Check IIS functionality using the localhost loopback address in a web browser. Y
 <br>
 <br>
 
-<img width="960" alt="Capture2" src="https://github.com/banksii/osticket-prereqs-installation/assets/120074266/32a0cc28-5768-4c6a-afdb-b787d4120781">
+<img width="960" alt="Capture2" src="https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/a555ceae-eac0-4b02-a704-938159b48a7d">
+
 
 <br><br>
 
@@ -69,7 +70,7 @@ From the files downloaded, install PHP Manager for IIS, the Rewrite module and t
 
 Create a PHP directory in the hard drive<br>
 <br>
-![image](https://github.com/banksii/osticket-prereqs-installation/assets/120074266/6cfaae89-55c8-438e-8d9f-cd87c118d8c1)
+<img width="960" alt="Capture3" src="https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/388176a1-266b-4988-8405-7cc2065ca668">
 <br>
 <br>
 Extract the files from the php_7.3.8 file into the newly created PHP folder in the C: drive.
@@ -78,14 +79,16 @@ Install the mySQL database server, choosing a "Typical" installation.
 The configuration wizard will prompt the user to create a root password.
 <br>
 <br>
-![image](https://github.com/banksii/osticket-prereqs-installation/assets/120074266/e1e27fd7-5dc4-4734-afb9-650ab439b31c)
+<img width="960" alt="Capture4" src="https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/018e65fa-d168-49e0-87f4-a1488e959be7">
 
 
 Extract the files in the osTicket folder into c:\inetpub\wwwroot. This will act as the web server's main folder. Rename the 'Upload' folder in this path to 'osTicket'.
 From there navigate to c:\inetpub\wwwroot\osTicket\include. Rename the "ost-sampleconfig.php" file to "ost-config.php". <br>
 Go to this file's properties and into the "Security" tab. Follow the steps in the video below to configure security properties.
 
-https://github.com/banksii/osticket-prereqs-installation/assets/120074266/f38dc583-37f5-48ab-a6ef-c23c79780545
+
+https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/629d45f8-d9df-4363-a7ba-396e8fd9a96f
+
 
 <br>
 
@@ -97,11 +100,17 @@ Lastly, install HeidiSQL and launch the program. Create a new session and input 
 The video below shows how to set up the PHP directory.<br>
 <br>
 
-https://github.com/banksii/osticket-prereqs-installation/assets/120074266/9e1a0069-81da-46fb-a652-611948fa1340
+
+
+https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/bc5c24f6-5b4c-47ed-9683-8eba843acf90
+
+
 
 In the IIS Manager, navigate to "thiscomputer"\Sites\Default Web Site\osTicket. From there, click "PHP Manager", scroll to the bottom, and click "Enable or disable an extension". Enable php_imap.dll, php_intl.dll, and php_opcache.dll.
 
-https://github.com/banksii/osticket-prereqs-installation/assets/120074266/36b5a3c9-3cbf-4234-a64f-896b646a4c85
+
+https://github.com/telkheir/osticket-prereqs-installation/assets/145223639/3f6fb8c8-63a5-45ed-adad-803465c0e63e
+
 
 After making changes, navigate to the right column and click the link to Browse*:80 (http). The osTicket installer should open a tab in your browser.
 
